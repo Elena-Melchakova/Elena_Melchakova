@@ -1,0 +1,16 @@
+.task{
+    background-color: rgb(164, 193, 247);
+    max-width: 350px;
+    list-style: upper-roman;
+}
+.box{
+    background-color: black;
+    color: rgb(2, 107, 2);
+    width: 400px;
+    height: 70px;
+    padding-top: 0em;
+    overflow: auto;
+}
+.list{
+  list-style-type: lower-roman;  
+}

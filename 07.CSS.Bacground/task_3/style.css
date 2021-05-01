@@ -1,0 +1,45 @@
+.block_1{
+    width: 15em;
+    height: 19em;
+    background-color: rgb(122, 202, 233);
+    color: white;
+    float: left;
+    overflow: auto;
+    padding: 0;
+    margin-bottom: 10em;
+    
+}
+.block_2{
+    width: 50em;
+    height: 11em;
+    background-color: rgb(196, 207, 255);
+    color: white;
+    margin-bottom: 0em;
+    margin-top: 0mm;
+    margin-left: 15em;
+    margin-right: 0mm;
+}
+.block_3{
+    width: 50em;
+    height: 20em;
+    background-color: rgb(80, 83, 255);
+    margin-bottom: 0em;
+    margin-top: 0.5em;
+    margin-left: 15em;
+    margin-right:0mm;
+
+}
+.block_4{
+    width: 65em;
+    height: 3em;
+    background-color: rgb(100, 0, 139);
+    color: white;
+    clear: both;
+    margin-top: 0.5em;
+}
+img{
+    margin-right: 2em;
+    margin-top: -8em;
+    float: right;
+
+}

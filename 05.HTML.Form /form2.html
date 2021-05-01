@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <form id="my_Form" name="user_name" method="post" action="http://fe.it-academy.by/TestForm.php " enctype="multipart">
     <table align="center" width="700px">
         <tr>
             <td >
@@ -19,7 +20,7 @@
                     <input type="radio" name="radio_group" value="На сайте" >На сайте
                     </label>
                     <label>
-                    <input type="radio" name="radio_group" value="В Google" >в Google
+                    <input type="radio" name="radio_group" value="В Google" id="google">в Google
                     </label>
             </fieldset></td>
             <td>
@@ -32,7 +33,7 @@
                     <input type="radio" name="radio_group" value="На сайте" >На сайте
                     </label>
                     <label>
-                    <input type="radio" name="radio_group" value="В Google" >в Google
+                    <input type="radio" name="radio_group" value="В Google" id="google1">в Google
                     </label>
             </fieldset></td>
         </tr>
@@ -41,8 +42,8 @@
                 <h3>Простая форма авторизации:</h3>
                 <fieldset>
                 <legend>Авторизтруйтесь</legend>
-                <input type="text" ID="login" name="login" autofocus>*Логин<br/>
-                <input type="password" ID="pass" name="password">*Пароль <br/>
+                <input type="text" ID="login" name="login" autofocus required>*Логин<br/>
+                <input type="password" ID="pass" name="password" required>*Пароль <br/>
                 <label>  
                     <input type="checkbox" name="Оставаться в системе">  Оставаться в системе
                     <input type="submit" value="Войти">
@@ -73,11 +74,10 @@
                 <h3>Отзыв:</h3>
                 <fieldset>
                 <legend>Оставьте Ващ отзыв</legend>
-                <FORM id="my_Form" name="user_name" method="POST" action="form.php">
-                <input type="text" name="Имя" placeholder="обязательное поле" maxlength="20">*Имя<br/>
-                <input type="email" placeholder="обязательное поле" method="POST">* e-mail<br>
+                <input type="text" name="Имя"  maxlength="20" required>*Имя<br/>
+                <input type="email"  method="POST" required>* e-mail<br>
                 <textarea placeholder="Форма отправки"></textarea><br/>
-                <input type="submit" value="Отправить" > </FORM>
+                <input type="submit" value="Отправить" > 
             </fieldset></td>
             <td>
                 <h3>Выпадающий и мульти списки:</h3>
@@ -109,28 +109,24 @@
                 <h3>Загрузка файла на сервер:</h3>
                 <fieldset>
                 <legend>Upload</legend>
-                <form id="my_Form" name="user_name" method="POST" action="form.php" enctype="multipart"></FORM>
+                
                 Файл:<br/>
                 <input type="file" name="file_Field" dir=“ltr”><br/>
                 Срок хранения (года):<br/>
                 <INPUT TYPE="tel" pattern="[0-9]{,2}" size="4"> 
                 <input type="submit" value="Загрузить" >
-                </form>
+                
             </fieldset></td>
             <td>
                 <h3>Валидация данных HTML5:</h3>
                 <fieldset>
                 <legend>Строка поиска</legend>
                 <input type="text" maxlength="10" pattern="[А-Яа-яЁё]" placeholder="Только русские буквы"> <br/>
-                <label>
-                    +(<input name="tel1" type="tel" pattern="[0-9]{3}" placeholder="XXX" aria-label="3-digit area code" size="3"/>)-
-   <input name="tel2" type="tel" pattern="[0-9]{2}" placeholder="XX" aria-label="3-digit prefix" size="2"/> -
-   <input name="tel3" type="tel" pattern="[0-9]{7}" placeholder="XXXXXXX" aria-label="4-digit number" size="7"/>
-                </label>
+                    <input name="tel1" type="tel" pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" placeholder="+375-29-6364346" required>
                 <input type="submit" id="my_Form" value="Проверить" >
             </fieldset></td>
         </tr>
-    
     </table>
+</form>
 </body>
 </html>
